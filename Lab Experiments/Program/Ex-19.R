@@ -1,0 +1,5 @@
+library(readxl)
+diabetest1 <- read_excel("C:/Users/hk838/Downloads/NARA_complete.xlsx")
+Relation <- lm(BloodPressure ~ Age, data = diabetest1)
+plot(diabetest1$Age,diabetest1$BloodPressure,col = "green",main = "Linear Regression Analysis",xlab = "Age",ylab = "Blood Pressure")
+abline(Relation, col = "red", lwd = 2)
