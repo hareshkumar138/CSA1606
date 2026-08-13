@@ -1,5 +1,0 @@
-library(readxl)
-diabetest1 <- read_excel("C:/Users/hk838/Downloads/NARA_complete.xlsx")
-Model <- lm(Age ~ BloodPressure + Glucose, data = diabetest1)
-print(Model)
-coef(Model)
