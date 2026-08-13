@@ -1,5 +1,0 @@
-library(readxl)
-diabetest1 <- read_excel("C:/Users/hk838/Downloads/NARA_complete.xlsx")
-tbl <- table(diabetest1$Age, diabetest1$Insulin)
-print(tbl)
-chisq.test(tbl, simulate.p.value = TRUE)
